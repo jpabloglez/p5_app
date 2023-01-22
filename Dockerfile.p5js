@@ -1,0 +1,16 @@
+FROM python:3.9-slim-buster
+
+WORKDIR /home/p5js/
+
+COPY . .
+
+# Install pip and update pip
+RUN apt-get update && apt-get install -y python3-pip
+RUN pip3 install --upgrade pip
+
+# Install requirements
+RUN pip3 install -r setup/requirements.txt
+
+WORKDIR /home/p5js/src/
+
+# CMD ["npm", "start"]

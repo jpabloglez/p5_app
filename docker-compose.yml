@@ -1,0 +1,17 @@
+version: '3.5'
+
+services:
+  p5js:
+    build: 
+      context: .
+      dockerfile: Dockerfile.p5js
+    container_name: p5js
+    restart: always
+    ports:
+      - 5000:5000
+    volumes:
+      - $PWD/src/:/home/p5js/src/
+    environment:
+      - NODE_ENV=development
+    command: python3 app.py
+    #tty: true

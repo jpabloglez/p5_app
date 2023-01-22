@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sketch</title>
+    <style> body {padding: 0; margin: 0;} </style>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}">
+   
+   <script type="text/javascript" src="{{url_for('static', filename='p5.min.js')}}"></script>
+    <script type="text/javascript" src="{{url_for('static', filename='p5.dom.min.js')}}"></script>
+    <script type="text/javascript" src="{{url_for('static', filename='basic.js')}}"></script>
+    
+    <!-- CND for p5.js 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/addons/p5.sound.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/addons/p5.sound.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/addons/p5.dom.js"></script>
+    -->
+    <!-- Insert javascript file inside static folder 
+    <script type="text/javascript" src="{{url_for('static', filename='basic.js')}}"></script>
+    -->
+    <!--
+
+    <script src="{{url_for('static', filename='p5.min.js')}}"></script>
+    <script src="{{url_for('static', filename='p5.dom.min.js')}}"></script>
+    <script src="{{url_for('static', filename='cube_waves.js')}}"></script>
+
+    <script src="../js/p5.min.js"></script>
+    <script src="../js/p5.dom.min.js"></script>
+  -->
+    <script src="../static/basic.js"></script>
+    
+  </head>
+  <body style="background: black">
+    <h1> Hello world!</h1>
+    <div id="sketch-holder", style="border: 0.2rem solid white">
+    <script type="text/javascript" src="{{url_for('static', filename='init.js')}}"></script>
+    </div>
+  </body>
+</html>
